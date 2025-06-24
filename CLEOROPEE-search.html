@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleoropee | Aksesoris Homemade</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fce4ec, #e0f7fa);
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1000x300?text=Banner+CLEOROPEE') no-repeat center/cover;
+      height: 300px;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .poster {
+      display: block;
+      width: 90%;
+      max-width: 800px;
+      margin: 2rem auto;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 1rem;
+      text-align: center;
+      background: #fff;
+      margin-bottom: 2rem;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    .product img {
+      width: 200px;
+      border-radius: 10px;
+    }
+    .btn {
+      background-color: #ff80ab;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .checkout, .cart {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    footer {
+      background: #fce4ec;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CLEOROPEE</h1>
+    <p>Aksesoris Gelang Manik-Manik Lucu dan Elegan</p>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#cart">Keranjang</a>
+      <a href="#checkout">Checkout</a>
+      <a href="#login">Login</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero"></section>
+
+  <!-- Poster Promosi -->
+  <img src="KYnBp9C9.jpeg" alt="Poster Promosi CLEOROPEE" class="poster"/>
+
+  <!-- Katalog Produk -->
+  <section class="container" id="produk">
+    <h2>Produk Kami</h2>
+    <div class="product">
+      <img src="gelang angka.jpg" alt="Gelang Huruf Warna" />
+      <h3>Gelang Huruf Warna</h3>
+      <p>Gelang manik dengan huruf warna-warni yang bisa disesuaikan namanya.</p>
+      <p>Harga: Rp16.000</p>
+      <button class="btn">Tambah ke Keranjang</button>
+    </div>
+    <div class="product">
+      <img src="gelang manik manik ocean.jpg" alt="Gelang Ocean Pink" />
+      <h3>Gelang Ocean Pink</h3>
+      <p>Manik-manik berbentuk bintang laut dan kerang, cocok untuk tema pantai.</p>
+      <p>Harga: Rp11.000</p>
+      <button class="btn">Tambah ke Keranjang</button>
+    </div>
+    <div class="product">
+      <img src="gelang manik manik.jpg" alt="Gelang Lucu Pastel" />
+      <h3>Gelang Lucu Pastel</h3>
+      <p>Warna pastel, bentuk unik dan imut untuk tampilan manis.</p>
+      <p>Harga: Rp15.000</p>
+      <button class="btn">Tambah ke Keranjang</button>
+    </div>
+    <div class="product">
+      <img src="gelang jogja.jpg" alt="Gelang Etnik Jogja" />
+      <h3>Gelang Etnik Jogja</h3>
+      <p>Warna natural dan manik khas Jawa, cocok untuk style tradisional.</p>
+      <p>Harga: Rp17.000</p>
+      <button class="btn">Tambah ke Keranjang</button>
+    </div>
+  </section>
+
+  <!-- Halaman Keranjang -->
+  <section class="container cart" id="cart">
+    <h2>Keranjang Belanja</h2>
+    <p>Keranjang masih kosong. Tambahkan produk untuk melihat total belanja.</p>
+  </section>
+
+  <!-- Halaman Checkout -->
+  <section class="container checkout" id="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required />
+      <input type="text" placeholder="Alamat Lengkap" required />
+      <input type="text" placeholder="No. Telepon" required />
+      <button class="btn">Kirim Pesanan</button>
+    </form>
+    <p><strong>Status:</strong> Menunggu Pembayaran</p>
+  </section>
+
+  <!-- Halaman Login -->
+  <section class="container" id="login">
+    <h2>Login Pelanggan</h2>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="btn">Login</button>
+    </form>
+  </section>
+
+  <!-- Halaman Register -->
+  <section class="container" id="register">
+    <h2>Registrasi Pelanggan Baru</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="btn">Daftar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CLEOROPEE | Handmade with Love</p>
+  </footer>
+</body>
+</html>
